@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <conio.h> 
 
-main(){
- int a, b, c, sum;
- printf("\nEnter any three numbers: ");
- scanf("%d %d %d", &a, &b, &c);
+void main(){
  
- sum = a + b + c;
- printf("\n Sum = %d", sum);
-  
-	return 0; 
+int x, y;
+char a = 'y';
+x = y = 0;
+if (a == 'y'){
+	x += 5;
+	printf("The numbers are %d and \t%d", x, y);
+} 
+ 
 } 
 
