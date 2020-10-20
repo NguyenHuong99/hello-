@@ -1,0 +1,24 @@
+<style xmlns="http://www.w3.org/1999/html">
+    input:required {
+        outline: 1px red solid;
+        color: green;
+    }
+    input:required:valid{
+        background-size: 10px 10px;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    input:required:invalid{
+        background-size: 10px 10px;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+<formmethod="get"action="try.php">
+    Name:<input type="text"name="name"required="true"/><br/>
+    Email:<input type="email"name="emailid"required="true"/>
+        <input type="submit"value="sbmit"/>
+
+</form
