@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var loanAmount = 34500;
+        var interest = 8;
+        var interestAmount, totalAmount;
+        interestAmount = loanAmount * (interest / 100);
+        totalAmount = loanAmount + interestAmount;
+        document.write("<B>Total amount to be paid ($):</B>" + totalAmount + "BR />");
+
+        var number = 3;
+        alert('Number after increment = ' + ++number);
+        alert('Number after decrement = ' + number--);
+
+        var firstNumber = 3;
+        var secondNumber = 4;
+        document.write('First number is greater than the second number: ' +
+            (firstNumber > secondNumber));
+        document.write('<br/>First number is less than the second number: ' + (firstNumber < secondNumber));
+        document.write('<br/>First number is equal to the second number: ' + (firstNumber == secondNumber));
+
+        var name = "John";
+        var  age = 23;
+        alert('John\'s age is greater than or equal to 23 years: ' + ((name=="John") && (age >= 23)));
+
+        // (56 = 00111000 and 28 = 00011100)
+        alert( ("56" + ` & ` + "28" + ` = ` + (56 & 28));
+        // (56 = 00111000 and 28 = 00011100)
+        alert("56" + ` | ` + "28" + ` = ` + (56 | 28));
+
+        // (56 = 0111000 and 28 = 00011100)
+        alert("56" + ` ^ ` + "28" + ` = ` + (56 ^ 28));
+        // (28 = 00011100)
+        alert(` ~ ` + "28" + ` = ` + (~28));
+
+    </script>
+</body>
+</html>

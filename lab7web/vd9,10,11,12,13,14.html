@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ageFormat = /^\d{2}$/;
+
+    var nameCheck = new RegExp("^Jo");
+
+    var zipcodepattern = /^\d{5}$/;
+    var zipcode = zipcodepattern.exec(prompt(`Enter ZIP Code:`));
+    if(zipcode != null)
+    {
+        alert(`Valid ZIP Code.`)
+        alert(`Regular Expression PAttern: ` + zipcodepattern.source);
+    }
+    else
+    {
+        alert(`Invalid ZIP Code ~ Format xxxxx.`);
+    }
+
+    // To match a string ending with"ing"
+    var stringEnd = /ing$/;
+    // To match single digit
+    var num =/\d/;
+
+    var  quantity = prompt(`Enter quantity of product:`,0);
+    if(quantity < 0 || isNaN(quantity))
+    {
+        alert(`Please enter a positive number.`);
+    }
+
+    var firstNumber = prompt(`Enter first number:`,0);
+    var secondNumber = prompt(`Enter second number`,0);
+    var result = 0;
+    if (secondNumber == 0)
+    {
+        alert(`ERROR Message: Cannot divide by zero.`);
+    }
+    else
+    {
+        result = firstNumber/secondNumber;
+        alert("Result:" + result);
+    }
+
+    var percentage = prompt(`Enter percentage:`,0);
+    if (percentage >= 60)
+    {
+        alert(`You have obtained the A grade.`);
+    }
+    else if (percentage >= 35 && oercentage < 60)
+    {
+        alert(`You have obtained the B class.`);
+    }
+    else
+    {
+        alert(`You have failed`);
+    }
+
+    var username = prompt(`Enter Username;`);
+    var password = prompt(`Enter Password:`);
+    if (username != "" && password != "")
+    {
+        if (username == "admin" && password == "admin123")
+        {
+            alert(`Login Successful`);
+        }
+        else
+        {
+            alert(`Login Failed`);
+        }
+    }
+
+    var designation = prompt(`Enter designation;`);
+    switch (designation)
+    {
+        case `Manager`:
+            alert(`Salary: $21000`);
+            break;
+        case `Developer`:
+            alert(`Salary: $16000`);
+            break;
+        default:
+            alert(`Enter proper designation`);
+            break;
+    }
+
+</script>
+</body>
+</html>

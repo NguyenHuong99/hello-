@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Object</title>
+    <script>
+        function display_length()
+        {
+            var count = document.getElementById("forml").length;
+            alert('Number of controls on the form:' + count);
+        }
+    </script>
+</head>
+<body>
+<form id="forml" action="Welcome.php">
+    First name:<input type="text" name="firstname" value="John"/><br/><br/>
+    Last name:<input type="text" name="lastname" value="Smith"/><br/><br/>
+    Age:<input type="text" name="age" value="40"/><br/>
+    <input type="button" value="Controls" onclick="display_length()"/>
+</form>
+</body>
+</html>
