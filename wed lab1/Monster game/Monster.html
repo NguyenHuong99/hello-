@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+body{
+    background-color: black;
+}
+#fram{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 545px;
+    height: 629px;
+    background-image: url("frame.png");
+    z-index: 3;
+    overflow: hidden;
+}
+#light{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+.light1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+#img{
+    position: relative;
+    left: 91px;
+    top: 84px;
+    width: 367px;
+    height: 460px;
+    z-index: 2;
+    overflow: hidden;
+}
+p{
+    color: #33FF66;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    font-size: 12px;
+}
+#text-top{
+    position: relative;
+    z-index: 4;
+}
+#top{
+    position: absolute;
+    left: 191px;
+    top: 15px;
+    z-index: 4;
+}
+.face{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+#head{
+    height: 172px;
+}
+#eyes{
+    height: 79px;
+}
+#nose{
+    height: 86px;
+}
+#mouth{
+    height: 117px;
+}
+    </style>
+    <script src="Js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header id="top">
+        <img id="text-top" src="Monster_Mashup.png">
+        <p>Make your own monster face by clicking on the picture.</p>
+    </header>
+            <div id="light">
+                <img class="light1" id="light2" src="lightning-01.jpg"/>
+                <img class="light1" id="light3" src="lightning-02.jpg"/>
+                <img class="light1" id="light4" src="lightning-03.jpg"/>
+                    <div id="fram">
+                <div id="img">
+            <div id="head" class="face"><img src="headsstrip.jpg" height="172" width="3670" alt=""></div>
+            <div id="eyes" class="face"><img src="eyesstrip.jpg" width="3670" height="79" alt=""></div>
+            <div id="nose" class="face"><img src="nosesstrip.jpg" height="86" width="3670"></div>
+            <div id="mouth" class="face"><img src="mouthsstrip.jpg" height="123" width="3670"></div>
+            </div>
+            </div>
+            </div>>
+
+    <script>
+      $(document).ready(function light(){
+        var heaclix = 0, eyeclix = 0,
+            noseclix = 0, mouthclix = 0;
+        light_one();
+        light_two();
+        light_three();
+
+          $("#head").click(function (){
+          if (heaclix < 9){
+              $("#head").animate({left:"-=367px"},500);
+                heaclix+=1;
+          }
+          else {
+              $("#head").animate({left:"0px"},500);
+              heaclix = 0;
+          }
+          });
+          $("#eyes").click(function (){
+              if (eyeclix < 9){
+                  $("#eyes").animate({left:"-=367px"},500);
+                  eyeclix+=1;
+              }
+              else {
+                  $("#eyes").animate({left:"0px"},500);
+                  eyeclix = 0;
+              }
+          });
+          $("#nose").click(function (){
+              if (eyeclix < 9){
+                  $("#nose").animate({left:"-=367px"},500);
+                  noseclix+=1;
+              }
+              else {
+                  $("#nose").animate({left:"0px"},500);
+                  noseclix = 0;
+              }
+          });
+          $("#mouth").click(function (){
+              if (mouthclix < 9){
+                  $("#mouth").animate({left:"-=367px"},500);
+                  mouthclix+=1;
+              }
+              else {
+                  $("#mouth").animate({left:"0px"},500);
+                  mouthclix = 0;
+              }
+          });
+      });
+          function light_one(){
+              $("#light #light2").fadeIn(250).fadeOut(250);
+              setTimeout("light_one()", 4000)
+          }
+          function light_two(){
+              $("#light #light3").fadeIn(250).fadeOut(250);
+              setTimeout("light_two()", 5000);
+          }
+          function light_three(){
+              $("#light #light4").fadeIn(250).fadeOut(250);
+              setTimeout("light_three()", 6000);
+          }
+
+
+    </script>
+</body>
+</html>
