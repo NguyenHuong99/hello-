@@ -1,0 +1,130 @@
+#box {
+    height: 60px;
+    width: 180px;
+    float: right;
+    background-color: darkcyan;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 0px;
+    transition: 0.8s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: antiquewhite;
+}
+
+a {
+    color: whitesmoke;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
+}
+
+#box:hover input {
+    width: 200px;
+    margin: 0 20px;
+    border-bottom: 2px solid red;
+}
+
+input:focus {
+    width: 200px;
+    margin: 0 20px;
+    border-bottom: 2px solid red;
+}
+#head{
+    background-color: green;
+    height: 60px;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 5px;
+}
+#head-link{
+    height: 100px;
+    background-color: darkgray;
+    border: 1px solid white;
+    margin-bottom: 5px;
+
+}
+th{
+    display: inline-block;
+    border: 1px solid darkgray;
+    padding: 19px;
+    background-color: darkgray;
+    margin-right: 25px;
+}
+th,a:hover{
+    color: deepskyblue;
+}
+th, a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+#content{
+    float: right;
+    width: 500px;
+    min-height: 358px;
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 220px;
+    margin-left: 5px;
+    font-family: Arial, sans-serif, Tahoma, "Times New Roman";
+}
+.auto1, .auto2, .auto3, .auto4, .auto5, .auto6, .auto7, .auto8{
+    width: 500px;
+    min-height: 360px;
+    margin-bottom: 5px;
+    border: 1px solid #cdcdcd;
+}
+#content2{
+    float: left;
+    width: 500px;
+    min-height: 358px;
+    border: 1px solid white;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 200px;
+    margin-bottom: 500px;
+    font-family: Arial, sans-serif, Tahoma, "Times New Roman";
+}
+#footer{
+    height: 30px;
+    width: 76px;
+    clear: both;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+#title{
+    font-family: "Times New Roman", sans-serif, Arial, Tahoma;
+}
+.auto9{
+    border: 1px solid #cdcdcd;
+    min-height: 200px;
+    width: 342px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.auto10{
+    border: 1px solid #cdcdcd;
+    min-height: 200px;
+    width: 303px;
+    margin-bottom: 5px;
+    margin-top: 48px;
+    margin-right: 100px;
+    text-align: center;
+}
